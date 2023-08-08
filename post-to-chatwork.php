@@ -3,7 +3,7 @@
 Plugin Name: Post to Chatwork
 Plugin URI: https://wordpress.org/plugins/post-for-chatwork/
 Description: Wordpressの投稿をチャットワークへ通知するPlugin
-Version: 0.1.6
+Version: 0.1.7
 Author: KARIYA
 Author URI: https://www.n.kariya01.com/
 License: 
@@ -11,11 +11,10 @@ License URI:
 */
 
 add_action( 'transition_post_status', 'post_send_cw_message', 1, 3 );
-add_action( 'init', 'add_wpbs_save_post_hooks', 9999 );
+
 add_action( 'admin_menu', 'post_send_cw_admin_menu');
 
 function post_send_cw_message( $new_status, $old_status, $post ){
-    // 投稿タイプが新着情報（カスタム投稿タイプnews）で、
     // 新しいステータスが公開だったら
     if( $new_status == 'publish' ){
         if(!get_option('post_cw_api_token') || !get_option('post_cw_roomid'))return;
@@ -122,6 +121,12 @@ function post_send_cw_admin_opt_page(){
 </div>
 <?php
 }
+
+/**
+ * カスタム投稿の公開時に処理を追加する関数
+ * 　transition_post_status　フックを使用することで不要になりました。
+ * @return void
+ */
 function add_wpbs_save_post_hooks() {
     // デフォルト以外で、show_uiがtrue（管理画面が有効）となっている、追加されたカスタム投稿タイプを取得
     $additional_post_types = get_post_types( array( '_builtin' => false, 'show_ui' => true ) );

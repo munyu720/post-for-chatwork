@@ -1,6 +1,7 @@
 {
   "config": {
     "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
     "WP_UPLOAD_MAX_FILESIZE": "128M",
     "WP_MEMORY_LIMIT": "256M"
   },
