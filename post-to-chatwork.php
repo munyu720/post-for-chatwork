@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Post to Chatwork
-Plugin URI: 
+Plugin URI: https://wordpress.org/plugins/post-for-chatwork/
 Description: Wordpressの投稿をチャットワークへ通知するPlugin
 Version: 0.1.4
 Author: KARIYA

@@ -3,8 +3,8 @@ Contributors: byg01046
 Donate link: 
 Tags: chatwork
 Requires at least: 3.3
-Tested up to: 4.5
-Stable tag: 0.1.2
+Tested up to: 6.2.2
+Stable tag: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
