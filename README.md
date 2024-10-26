@@ -8,11 +8,11 @@ Stable tag: 0.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Wordpressへの投稿をチャットワークへ通知するプラグイン
+WordPressへの投稿をチャットワークへ通知するプラグイン
 
 == Description ==
 
-Wordpressへ投稿が有った場合にチャットワークへ通知をするプラグインです。
+WordPressへ投稿が有った場合にチャットワークへ通知をするプラグインです。
 
 チャットワークのアクセストークンを入力し、ルームidを指定すれば公開のタイミングでチャットワークへ通知が流れます。
 
